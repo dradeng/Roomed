@@ -1,0 +1,30 @@
+.cardBackground {
+  width: 371px;
+height: 324.4px;
+background-color: #ffffff;
+border-width: 5px #ffffff;
+
+}
+.imageHolder {
+  max-height: 160;
+}
+
+.propertyTitle {
+  margin-left: 10px;
+  width: 177px;
+ height: 29px;
+ font-family: Roboto;
+ font-size: 13px;
+ font-weight: normal;
+ font-style: normal;
+ font-stretch: normal;
+ letter-spacing: normal;
+ text-align: left;
+ color: #343434;
+}
+.info {
+  margin-left: 10px;
+}
+.resp {
+  height: 100%; width: 100%; object-fit: contain
+}

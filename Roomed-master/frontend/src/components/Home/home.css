@@ -1,0 +1,39 @@
+
+.backgroundCover {
+  background-image: linear-gradient(to left, #1e2434, #666666 48%, #1e2434);
+  background-size: 100%;
+  opacity: 0.53;
+  height: 100%;
+  position: fixed;
+
+}
+
+.headerText {
+  width: 461px;
+  height: 48px;
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+
+}
+
+
+.subHeaderText {
+  width: 285px;
+height: 16px;
+font-family: Roboto;
+font-size: 16px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: 1.19;
+letter-spacing: normal;
+text-align: center;
+color: #ffffff;
+}
