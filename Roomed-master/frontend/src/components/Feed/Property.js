@@ -28,7 +28,6 @@ const Property = props => {
                 <p> Park Avenue </p>
           </div>
           <div>
-          <img className="img-responsive" src="http://www.hdwallpaperspulse.com/wp-content/uploads/2013/05/url.jpg" alt="..." className="img-circle"/>
           </div>
         </div>
         <div className="imageHolder">
@@ -37,7 +36,7 @@ const Property = props => {
         <div className="row">
           <div className="col-sm-4 info">
           <p> Hello </p>
-            <p> Jacob </p>
+            <p> Jacoby </p>
 
           </div>
           <div className="col-sm-4">
