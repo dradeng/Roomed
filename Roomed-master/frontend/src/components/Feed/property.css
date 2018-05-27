@@ -3,7 +3,6 @@
 height: 324.4px;
 background-color: #ffffff;
 border-width: 5px #ffffff;
-
 }
 .imageHolder {
   max-height: 160;
@@ -27,4 +26,32 @@ border-width: 5px #ffffff;
 }
 .resp {
   height: 100%; width: 100%; object-fit: contain
+}
+.imageContainer {
+    position: relative;
+    text-align: center;
+}
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    color: #ffffff;
+    background-color:  #3ec6ff;
+    padding: 10px;
+    width: 72px;
+
+}
+.Date {
+  width: 90px;
+  height: 11px;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-align: left;
+  color: #868686;
+  margin-top: 10px;
 }
