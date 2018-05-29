@@ -1,0 +1,61 @@
+.propertyTitleText {
+
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  color: #343434;
+}
+
+.contactbutton {
+  width: 88.5px;
+  height: 33.4px;
+  border-radius: 6px;
+  background-color: #3ec6ff;
+  text-align: center;
+
+}
+.contacttext {
+
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
+}
+
+.bullet {
+
+  height: 15px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #343434;
+
+}
+.answer {
+  height: 14px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  color: #868686;
+}

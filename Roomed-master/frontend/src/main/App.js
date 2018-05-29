@@ -8,6 +8,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from '../components/Home';
 import Login from '../components/Login';
 import Feed from '../components/Feed';
+import Property from '../components/PropertyView';
 
 import Register from '../components/Register';
 import { store } from '../store';
@@ -59,6 +60,7 @@ class App extends React.Component {
             <Route path="/feed" component={Feed} />
 
             <Route path="/register" component={Register} />
+              <Route path="/exe" component={Property} />
 
 
             </Switch>
