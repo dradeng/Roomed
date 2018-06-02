@@ -72,7 +72,7 @@ class App extends React.Component {
             currentUser={this.props.currentUser}
             handler = {this.props.showModal}
           />
-            <PostSubletForm show={this.props.isShowing}/> }
+            <PostSubletForm onClose={this.props.hideModal} show={this.props.isShowing}/> }
             <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/login" component={Login} />

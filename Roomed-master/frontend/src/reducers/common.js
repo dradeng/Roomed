@@ -75,9 +75,10 @@ export default (state = defaultState, action) => {
           }
 
       case HIDE_MODAL:
-          return Object.assign({}, state, {
-              showTheModal: false
-          })
+          return {
+              ...state,
+              isShowing: false
+          }
       default:
       return state;
   }
