@@ -29,7 +29,11 @@ const LoggedOutView = props => {
             Feed
           </Link>
         </li>
-          <button onClick={props.handler}>   Post</button>
+          <li className="nav-item">
+              <button className="btn btn-md btn-primary pull-xs-right"  onClick={props.handler}>
+                  Post
+              </button>
+          </li>
 
       </ul>
     );

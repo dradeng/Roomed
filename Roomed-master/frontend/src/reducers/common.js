@@ -34,6 +34,7 @@ export default (state = defaultState, action) => {
         ...state,
         token: action.token || null,
         appLoaded: true,
+          isShowing: false,
         currentUser: action.payload ? action.payload.user : null
       };
     case REDIRECT:
@@ -66,7 +67,8 @@ export default (state = defaultState, action) => {
     case PROFILE_FAVORITES_PAGE_UNLOADED:
     case SETTINGS_PAGE_UNLOADED:
     case LOGIN_PAGE_UNLOADED:
-    case REGISTER_PAGE_UNLOADED:
+      case REGISTER_PAGE_UNLOADED:
+        return state;
       case SHOW_MODAL:
         console.log("hello");
           return {
