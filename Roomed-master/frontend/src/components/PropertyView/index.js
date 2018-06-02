@@ -80,7 +80,7 @@ class PropertyView extends React.Component {
 
                             <div>
                                 <div className="propertyAndImage row">
-                                    <img style={{height: 140}} src={"http://images6.fanpop.com/image/answers/544000/544974_1410976691194_300_300.jpg"} className="img-circle col-sm-4" alt="Cinque Terre" />
+                                    <img style={{height: 140, width: 180}} src={"http://images6.fanpop.com/image/answers/544000/544974_1410976691194_300_300.jpg"} className="img-circle col-sm-4" alt="Cinque Terre" />
                                     <div style={{marginTop: 50}}  className="propertyTitleText col-sm-7">
                                         <p style={{marginBottom: 0}}> Jacob's Property </p>
                                         <p style={{marginTop: 0}}> .5 Miles from 5th Avenue </p>

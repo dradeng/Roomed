@@ -52,7 +52,7 @@ console.log(property.image1);
             </div>
             <div className="row">
               <div className="col-sm-2">
-                <i class="glyphicon glyphicon-calendar" style={{color:'#868686'}}/>
+                <i className="glyphicon glyphicon-calendar" style={{color:'#868686'}}/>
               </div>
               <div className="col-sm-10">
               <p className="date">{property.start_date} to {property.end_date}</p>

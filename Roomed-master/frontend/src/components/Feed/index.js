@@ -10,6 +10,7 @@ import {
   FEED_PAGE_UNLOADED,
   APPLY_TAG_FILTER
 } from '../../constants/actionTypes';
+import PostSubletForm from '../subcomponents/PostSubletForm';
 const Promise = global.Promise;
 
 
@@ -47,6 +48,14 @@ const mapDispatchToProps = dispatch => ({
 });
 
 class Feed extends React.Component {
+
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            showModal: false
+        };
+    }
   componentWillMount() {
 
   }
@@ -54,6 +63,8 @@ class Feed extends React.Component {
   componentWillUnmount() {
     this.props.onUnload();
   }
+
+
 
   render() {
     return (

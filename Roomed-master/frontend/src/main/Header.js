@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const LoggedOutView = props => {
+    console.log(props);
   if (!props.currentUser) {
     return (
       <ul className="nav navbar-nav pull-xs-right">
@@ -17,7 +18,6 @@ const LoggedOutView = props => {
             Sign in
           </Link>
         </li>
-
         <li className="nav-item">
           <Link to="/register" className="nav-link">
             Sign up
@@ -29,6 +29,7 @@ const LoggedOutView = props => {
             Feed
           </Link>
         </li>
+          <button onClick={props.handler}>   Post</button>
 
       </ul>
     );
@@ -77,7 +78,8 @@ const LoggedInView = props => {
 
 class Header extends React.Component {
   render() {
-    return (
+
+      return (
       <nav className="navbar navbar-light">
         <div className="container">
 
@@ -85,9 +87,9 @@ class Header extends React.Component {
             {this.props.appName.toLowerCase()}
           </Link>
 
-          <LoggedOutView currentUser={this.props.currentUser} />
+          <LoggedOutView handler={this.props.handler}  currentUser={this.props.currentUser} />
 
-          <LoggedInView currentUser={this.props.currentUser} />
+          <LoggedInView  handler={this.props.handler}  currentUser={this.props.currentUser} />
         </div>
       </nav>
     );

@@ -14,13 +14,17 @@ import {
   PROFILE_FAVORITES_PAGE_UNLOADED,
   SETTINGS_PAGE_UNLOADED,
   LOGIN_PAGE_UNLOADED,
-  REGISTER_PAGE_UNLOADED
+  REGISTER_PAGE_UNLOADED,
+    SHOW_MODAL,
+    HIDE_MODAL
 } from '../constants/actionTypes';
 
 const defaultState = {
   appName: 'Roomed',
   token: null,
-  viewChangeCounter: 0
+  viewChangeCounter: 0,
+    isShowing: false,
+
 };
 
 export default (state = defaultState, action) => {
@@ -63,8 +67,18 @@ export default (state = defaultState, action) => {
     case SETTINGS_PAGE_UNLOADED:
     case LOGIN_PAGE_UNLOADED:
     case REGISTER_PAGE_UNLOADED:
-      return { ...state, viewChangeCounter: state.viewChangeCounter + 1 };
-    default:
+      case SHOW_MODAL:
+        console.log("hello");
+          return {
+              ...state,
+              isShowing: true
+          }
+
+      case HIDE_MODAL:
+          return Object.assign({}, state, {
+              showTheModal: false
+          })
+      default:
       return state;
   }
 };
