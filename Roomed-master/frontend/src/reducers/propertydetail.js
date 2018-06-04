@@ -1,4 +1,4 @@
-import { PROPERTY_PAGE_LOADED, PROPERTY_PAGE_UNLOADED } from '../constants/actionTypes';
+import {PROPERTY_PAGE_LOADED, PROPERTY_PAGE_UNLOADED, UPDATE_FIELD_LIST} from '../constants/actionTypes';
 
 const state = {
     showMap: false,
@@ -14,6 +14,7 @@ export default (state = {}, action) => {
       };
     case PROPERTY_PAGE_UNLOADED:
       return {};
+
     default:
       return state;
   }

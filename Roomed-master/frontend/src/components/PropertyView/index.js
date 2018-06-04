@@ -72,8 +72,8 @@ class PropertyView extends React.Component {
         <div style={{width: "100%", marginLeft: 10}} className="backgroundNewCover">
 
 
-            <div className="row">
-                <div style={{marginLeft: 20}} className="col-sm-6">
+            <div className="row" >
+                <div style={{marginLeft: 20,marginTop: 10}} className="col-sm-6">
                     <div className="propertyHeader row">
 
                         <div style={{marginLeft: 20}} className="propertyInfoBox row">

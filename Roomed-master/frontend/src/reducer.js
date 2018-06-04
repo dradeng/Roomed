@@ -5,6 +5,7 @@ import common from './reducers/common';
 import home from './reducers/home';
 import feed from './reducers/feed';
 import propertydetail from './reducers/propertydetail';
+import listreducer from './reducers/listreducer';
 
 import { routerReducer } from 'react-router-redux';
 
@@ -15,6 +16,7 @@ export default combineReducers({
   home,
     feed,
     propertydetail,
+    listreducer,
 
   router: routerReducer
 });

@@ -10,6 +10,8 @@ import Login from '../components/Login';
 import Feed from '../components/Feed';
 import Property from '../components/PropertyView';
 import PostSubletForm from '../components/subcomponents/PostSubletForm';
+import List from '../components/List';
+import Features from '../components/List/Features';
 
 import Register from '../components/Register';
 import { store } from '../store';
@@ -75,7 +77,7 @@ class App extends React.Component {
             currentUser={this.props.currentUser}
             handler = {this.props.showModal}
           />
-            <PostSubletForm onClose={this.props.hideModal} show={this.props.isShowing}/> }
+            <PostSubletForm onClose={this.props.hideModal} show={this.props.isShowing}/>
             <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/login" component={Login} />
@@ -83,6 +85,9 @@ class App extends React.Component {
 
             <Route path="/register" component={Register} />
               <Route path="/exe" component={Property} />
+                <Route path="/list/basics" component={List} />
+                <Route path="/list/features" component={Features} />
+                <Route path="/list/roommates" component={Features} />
 
 
             </Switch>
