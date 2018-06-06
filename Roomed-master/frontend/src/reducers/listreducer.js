@@ -1,6 +1,9 @@
-import {LIST_PAGE_LOADED, LIST_PAGE_UNLOADED, UPDATE_FIELD_LIST} from '../constants/actionTypes';
+import {
+    LIST_PAGE_LOADED, LIST_PAGE_UNLOADED, ROOMMATES_PAGE_UNLOADED,
+    UPDATE_FIELD_LIST
+} from '../constants/actionTypes';
 
-/*
+
 const defaultState = {
     num_Beds: 0,
     title:'',
@@ -42,8 +45,8 @@ const defaultState = {
     elevator: false,
     gym: false,
 };
-*/
-export default (state = {}, action) => {
+
+export default (state = defaultState, action) => {
     switch (action.type) {
         case LIST_PAGE_LOADED:
             return {
@@ -53,6 +56,11 @@ export default (state = {}, action) => {
             return {
                 ...state
             };
+
+        case ROOMMATES_PAGE_UNLOADED:
+            return {
+                defaultState
+            }
         case UPDATE_FIELD_LIST:
             console.log(action);
             return { ...state, [action.key]: action.value };

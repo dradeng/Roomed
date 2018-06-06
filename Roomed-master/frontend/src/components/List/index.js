@@ -66,12 +66,37 @@ class List extends React.Component {
 
 
                                     <fieldset className="form-group">
-
+                                        <input
+                                    className="form-control form-control-md"
+                                    type="text"
+                                    placeholder="Title of Place"
+                                    value={this.props.title}
+                                    onChange={(evt) => this.changeProp('title',evt)} />
+                                </fieldset>
+                                    <fieldset className="form-group">
+                                        <input
+                                            className="form-control form-control-sm"
+                                            type="number"
+                                            placeholder="0"
+                                            value={this.props.num_Capable_of_Housing}
+                                            onChange={(evt) => evt.target.value > -1 ? this.changeProp('num_Capable_of_Housing',evt): null } />
+                                    </fieldset>
+                                    <fieldset className="form-group">
                                         <LocationSearchInput
                                             changeIt={(address) => this.changeValue(address)}
                                             value={address}
-                                            />
+                                        />
+                                     </fieldset>
+                                    <fieldset className="form-group">
+                                        <input
+                                            className="form-control form-control-sm"
+                                            type="number"
+                                            placeholder="0"
+                                            value={this.props.price}
+
+                                            onChange={(evt) =>  this.changeProp('price',evt) } />
                                     </fieldset>
+
 
                                     <button
                                         className="btn btn-lg btn-primary pull-xs-right"

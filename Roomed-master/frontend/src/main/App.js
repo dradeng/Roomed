@@ -12,6 +12,7 @@ import Property from '../components/PropertyView';
 import PostSubletForm from '../components/subcomponents/PostSubletForm';
 import List from '../components/List';
 import Features from '../components/List/Features';
+import Roommates from '../components/List/Roommates';
 
 import Register from '../components/Register';
 import { store } from '../store';
@@ -87,7 +88,7 @@ class App extends React.Component {
               <Route path="/exe" component={Property} />
                 <Route path="/list/basics" component={List} />
                 <Route path="/list/features" component={Features} />
-                <Route path="/list/roommates" component={Features} />
+                <Route path="/list/roommates" component={Roommates} />
 
 
             </Switch>
