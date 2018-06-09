@@ -6,6 +6,7 @@ import agent from '../../agent';
 import { connect } from 'react-redux';
 import './home.css';
 
+
 import {
   HOME_PAGE_LOADED,
   HOME_PAGE_UNLOADED,
@@ -32,12 +33,14 @@ const mapDispatchToProps = dispatch => ({
 class Home extends React.Component {
 
   componentWillMount() {
+    /*
     const tab = this.props.token ? 'feed' : 'all';
     const articlesPromise = this.props.token ?
       agent.Articles.feed :
       agent.Articles.all;
 
     this.props.onLoad(tab, articlesPromise, Promise.all([agent.Tags.getAll(), articlesPromise()]));
+    */
   }
 
   componentWillUnmount() {
@@ -46,7 +49,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="backgroundCover">
+      <div style={{backgroundCover: require('../../assets/MexicoCity.mp4')}} className="backgroundCover">
 
         <div className="container page">
           <div className="row">
