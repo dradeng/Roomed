@@ -1,7 +1,7 @@
 import React from 'react';
 import agent from '../../agent';
 import { connect } from 'react-redux';
-//import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 import './propertydetail.css';
 import  DateComponent  from './DateComponent';
 import {
@@ -18,7 +18,7 @@ const mapStateToProps = state => ({
   token: state.common.token,
 
 });
-/*
+
 const MyMapComponent = withScriptjs(withGoogleMap((props) =>
   <GoogleMap
     defaultZoom={8}
@@ -26,8 +26,8 @@ const MyMapComponent = withScriptjs(withGoogleMap((props) =>
   >
     {props.isMarkerShown && <Marker position={{ lat: -34.397, lng: 150.644 }} />}
   </GoogleMap>
-))
-*/
+));
+
 
 const mapDispatchToProps = dispatch => ({
   onClickTag: (tag, pager, payload) =>
@@ -37,7 +37,7 @@ const mapDispatchToProps = dispatch => ({
   onUnload: () =>
     dispatch({  type: PROPERTY_PAGE_UNLOADED })
 });
-/*
+
 class PropertyView extends React.Component {
 
 
@@ -69,7 +69,7 @@ class PropertyView extends React.Component {
   }
 
   render() {
-   /* return (
+    return (
         <div style={{width: "100%", marginLeft: 10}} className="backgroundNewCover">
 
 
@@ -182,14 +182,10 @@ class PropertyView extends React.Component {
             </div>
             <div className="footer"></div>
         </div>
-    ); AIRPLANE MODE
-    */
-class PropertyView extends React.Component {
-
-    render() {
-        return (<div> hello </div> );
-    }
-  
+    ); 
 }
+}
+
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(PropertyView);
