@@ -8,13 +8,12 @@ const Property = props => {
   const buttonStyle = {
     background: '#3ec6ff',
     borderRadius: 6,
-    width: 150,
     height: 45,
     fontFamily: 'Roboto',
     fontSize: 16,
     color: '#ffffff',
     marginRight: 10,
-    marginTop: 5
+    marginTop: 10
 
   };
   const buttonText = {
@@ -23,8 +22,7 @@ const Property = props => {
   };
 console.log(property.image1);
   return (
-  <div style={{marginLeft: 4, marginTop: 10}} className="col-sm-3" >
-    <div className="cardBackground">
+    <div   className="cardBackground">
         <div className="propertyHeader">
           <div className="card-body propertyTitle">
                 <p> {property.title} </p>
@@ -34,8 +32,8 @@ console.log(property.image1);
           </div>
         </div>
         <div className="imageContainer">
-          <img className="img-responsive" src={property.image1} alt="Card image cap"/>
-          <p className="top-right">{property.price}</p>
+          <img className="img-responsive" style={{borderRadius: 5}} src={property.image1} alt="Card image cap"/>
+          <p className="top-right">${property.price}</p>
         </div>
 
         <div className="row">
@@ -64,11 +62,11 @@ console.log(property.image1);
 
 
           <div className="col-sm-4">
-          <button style={buttonStyle}>Book Now</button>
+          <button style={{background: '#3ec6ff',width: 100, borderRadius: 6, height: 45, fontFamily: 'Roboto', fontSize: 16,  color: '#ffffff',   marginRight: 10, marginBottom: 5}}
+        className="btn-md">Book Now</button>
           </div>
         </div>
       </div>
-    </div>
 
   );
 };

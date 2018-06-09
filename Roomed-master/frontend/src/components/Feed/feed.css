@@ -2,10 +2,18 @@
 .backgroundNewCover {
   background-size: 100%;
   height: 100%;
-  position: fixed;
   background-color: rgba(246,246,246,0.53);
-  overflow: scroll;
   margin: 20;
+  overflow: scroll;
+}
+
+.leftColumn {
+overflow-y: auto;
+    overflow-x:s;
+    height: auto;
+    padding: .5rem;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
 }
 
 .headerText {
