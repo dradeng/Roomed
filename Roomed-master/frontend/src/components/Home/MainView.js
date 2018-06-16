@@ -2,6 +2,7 @@ import React from 'react';
 import agent from '../../agent';
 import { connect } from 'react-redux';
 import { CHANGE_TAB } from '../../constants/actionTypes';
+import Mexico from '../../assets/MexicoCity.mp4';
 
 const YourFeedTab = props => {
   if (props.token) {
@@ -66,7 +67,9 @@ const mapDispatchToProps = dispatch => ({
 
 const MainView = props => {
   return (
+
     <div className="col-sm-9">
+
       <div className="feed-toggle">
         <ul className="nav nav-pills outline-active">
 
@@ -82,7 +85,7 @@ const MainView = props => {
         </ul>
       </div>
 
-    
+
     </div>
   );
 };

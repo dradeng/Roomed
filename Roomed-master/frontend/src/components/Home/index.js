@@ -5,6 +5,9 @@ import Tags from './Tags';
 import agent from '../../agent';
 import { connect } from 'react-redux';
 import './home.css';
+import Mexico from '../../assets/Matkot.mp4';
+
+
 
 
 import {
@@ -49,7 +52,10 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div style={{backgroundCover: require('../../assets/MexicoCity.mp4')}} className="backgroundCover">
+        <div> <video id='background-video' autoPlay loop muted>
+            <source src={Mexico} type='video/mp4' />
+        </video>
+      <div className="backgroundCover">
 
         <div className="container page">
           <div className="row">
@@ -58,6 +64,7 @@ class Home extends React.Component {
           </div>
 
           <div className="col-sm-6">
+
               <h3 className="headerText"> Find your new place </h3>
                 <h4 className="subHeaderText"> Find your new place </h4>
 
@@ -71,6 +78,7 @@ class Home extends React.Component {
         </div>
 
       </div>
+        </div>
     );
   }
 }

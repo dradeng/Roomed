@@ -29,11 +29,7 @@ const LoggedOutView = props => {
             Feed
           </Link>
         </li>
-          <li className="nav-item">
-              <button className="btn btn-md btn-primary pull-xs-right"  onClick={props.handler}>
-                  Post
-              </button>
-          </li>
+        
 
       </ul>
     );
@@ -84,7 +80,7 @@ class Header extends React.Component {
   render() {
 
       return (
-      <nav className="navbar navbar-light">
+      <nav style={{zIndex: 100,marginBottom: 5}} className="navbar navbar-light">
         <div className="container">
 
           <Link to="/" className="navbar-brand">
