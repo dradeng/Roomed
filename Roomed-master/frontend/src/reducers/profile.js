@@ -1,4 +1,4 @@
-import { PROFILE_PAGE_LOADED, PROFILE_PAGE_UNLOADED } from '../constants/actionTypes';
+import { PROFILE_PAGE_LOADED, PROFILE_PAGE_UNLOADED, UPDATE_VALUE } from '../constants/actionTypes';
 
 export default (state = {}, action) => {
   switch (action.type) {
@@ -8,6 +8,11 @@ export default (state = {}, action) => {
       };
     case PROFILE_PAGE_UNLOADED:
       return {};
+    case UPDATE_VALUE:
+      return {
+        ...state,
+        [action.key]: action.value
+      };
     default:
       return state;
   }
