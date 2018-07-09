@@ -7,8 +7,13 @@
     "react-scripts": "1.1.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "0.1.0-11",
     "history": "^4.7.2",
+    "identicon.js": "^2.3.2",
     "install": "^0.11.0",
+    "lorem-ipsum": "^1.0.5",
     "marked": "^0.3.6",
     "moment": "^2.22.2",
     "npm": "^6.1.0",
@@ -16,6 +21,7 @@
     "rc-slider": "^8.6.1",
     "react": "^16.3.0",
     "react-bootstrap": "^0.32.1",
+    "react-chat-elements": "^10.0.0",
     "react-date-picker": "^6.10.1",
     "react-day-picker": "^7.1.9",
     "react-dom": "^16.3.0",

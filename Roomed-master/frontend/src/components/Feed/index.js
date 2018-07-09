@@ -106,13 +106,14 @@ class Feed extends React.Component {
       <div className="backgroundNewCover" >
           <input type="text" style={{ zIndex: 500,fontSize: 16, marginBottom: 15, width: 500, marginLeft: 20, paddingLeft: 4,  background: '#fff',  flex: 1}} className="form-control" placeholder="Search for."/>
           <button onClick={() => this.props.onClickFilter()} > Click Me </button> 
+          <i className="fas fa-filter">  </i>
+
+
         <div className="row" style={{position: 'fixed'}}>
 
           <div  style={{ height: "1000px", overflow: "auto" ,marginBottom: 50}} className="col-sm-7" >
 
            {this.renderColumn()}
-           {this.renderColumn()}
-
 
           </div>
           <div className="col-sm-5" >

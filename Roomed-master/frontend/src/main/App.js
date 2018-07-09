@@ -9,10 +9,13 @@ import Home from '../components/Home';
 import Login from '../components/Login';
 import Feed from '../components/Feed';
 import Property from '../components/PropertyView';
+import Messages from '../components/Messages';
+
 import PostSubletForm from '../components/subcomponents/PostSubletForm';
 import List from '../components/List';
 import Features from '../components/List/Features';
 import Roommates from '../components/List/Roommates';
+import Profile from '../components/Profile';
 
 import Register from '../components/Register';
 import { store } from '../store';
@@ -90,6 +93,8 @@ class App extends React.Component {
                 <Route path="/list/features" component={Features} />
                 <Route path="/list/roommates" component={Roommates} />
 
+                <Route path="/profile" component={Profile} />
+                <Route path="/messages" component={Messages} />
 
             </Switch>
         </div>
